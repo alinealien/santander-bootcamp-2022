@@ -1,0 +1,67 @@
+<!-- NAVBAR -->
+<mat-toolbar class="example-spacer-footer">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon class="menu">menu</mat-icon>
+    </button>
+    <span class="myapp">My App</span>
+    <span class="example-spacer"></span>
+
+    <i class="material-icons middle"> favorite </i>
+    <i class="material-icons share"> share </i>
+  </mat-toolbar>
+
+  <!-- FOOTER -->
+
+  <mat-toolbar class="footer mat-elevation-z4">
+    <span>
+       Developer with 
+        <i class="material-icons middle"> favorite </i>
+        by
+        <a href="https://www.github.com/alinealien" target="_blank"> AlineAntunes </a>
+    </span>
+</mat-toolbar>
+  
+ <!-- SPA da aula -->
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA com Angular</title>
+</head>
+
+<body>
+
+
+  <div>
+    
+    <spa-alunos [valorInicial]="valor"></spa-alunos>
+
+    <button (click)="mudarValor()">Mudar Valor</button>
+    <button (click)="reiniciarValor()">Reiniciar Valor</button>
+    <button (click)="exibirTabela()">Exibir Tabela</button>
+    
+  </div>
+
+  <table *ngIf="exibeTabela">
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>E-mail</th>
+      <th>Curso</th>
+    </tr>
+    <tr *ngFor="let aluno of listaAlunos">
+      <td>{{aluno.nome}}</td>
+      <td>{{aluno.idade}}</td>
+      <td>{{aluno.email}}</td>
+      <td>{{aluno.curso}}</td>
+    </tr>
+  </table>
+
+  <spa-professores></spa-professores>
+
+</body>
+
+</html>

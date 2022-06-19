@@ -1,4 +1,6 @@
-## Carrefour Web Developer
+## BOOTCAMP SANTANDER 2022
 
-#### Desenvolvendo uma Progressive Web Application com React para mapear os dados do COVID19 pelo mundo
+#### Repositório dos projetos desenvolvidos durante o bootcamp santander 2022
+
+
 
